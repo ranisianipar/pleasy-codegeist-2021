@@ -1,0 +1,17 @@
+modules:
+  confluence:contentAction:
+    - key: pleasy-schedule-hello-world-content-action
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: Pleasy Schedule
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/e5673cc4-9805-4b39-a69d-3fae53aae944
+  name: Pleasy Schedule
